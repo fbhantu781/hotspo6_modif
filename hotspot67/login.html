@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="title"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#3B5998" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <link rel="stylesheet" href="style.css">
+    <br>
+    <marquee direction="left">Pemberitahuan : Bermain Game Secukupnyah Jangan Lupa Untuk Istirahat Jika Cape dan mengantuk |     Pemberitahuan : Jangan lupa Sholat 5 Waktu Dan Gunakan Internet Secara Bijak dan Bertanggung jawab.   |    Bila Tidak Terkoneksi Internet Segera Cek Status Di dhcp.net/status tidak bisa akses internet jika waktu pemakaian voucher habis...! </marquee></head><br> <!-- Ganti dhcp.net dengan login page anda -->
+<body>
+        $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript">
+            function doLogin() {
+                document.sendin.username.value = document.login.username.value;
+                document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value +
+                    '$(chap-challenge)');
+                document.sendin.submit();
+                return false;
+            }
+        </script>
+        $(endif)
+
+            <div id="main" class="main">
+            
+            <div class="box">
+                <h3 class="brand">CYBER.NET™</h3> <!-- CYBER.NET™ Ganti dengan Nama Hotspot Anda-->
+            </div>
+            <div style="text-align:center"> <!-- ini kode vidio by robi pratama septian shah-->
+            <br><br>
+            <video controls="autoplay"  width="300" name="media">
+            <source src="movie.mp4" type="video/mp4"></video>
+            <br><br>
+            </div>
+            <script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script>  <!-- ini kode vidio by robi pratama septian shah-->
+
+            <div class="box">
+                <button id="btnvrc" class="small-button" onclick="voucher();"><i class="icon icon-ticket">&#xe802;</i> Voucher</button>
+                <button id="btnmem" class="small-button" onclick="member();"><i class="icon icon-user-circle-o">&#xf2be;</i> Member</button>
+                <button id="qr" class="small-button" onclick="window.location='http://laksa19.github.io/myqr';"> <i class="icon icon-qrcode">&#xe801;</i> QR
+                    Code</button>
+            </div>
+            <div class="box" id="infologin">
+            </div>
+            <form autocomplete="off" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                $(endif)>
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+                <input class="username" name="username" type="text" value="$(username)" />
+                <input class="password" name="password" placeholder="Password" type="hidden" />
+
+                <button class="button" type="submit"><i class="icon icon-login">&#xe803;</i> Login</button>
+
+            </form>
+
+            $(if trial == 'yes')
+            <div class="box">Coba Wifi Gratis...! <a style="text-decoration: underline; color:#fff;" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">KLIK
+                    DI SINI</a></div>
+            $(endif)
+
+            $(if error)<div class="notice">$(error)</div>$(endif)
+
+            <table class="table">
+                    <caption style="font-size: 16px; font-weight: bold;">Paket Internet Wifi</caption>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Aktif</th>
+                        <th>Harga</th>
+                    </tr>
+                    <tr>
+                        <td>3H</td>
+                        <td>3 Jam</td>
+                        <td>Rp 2.000 (Unlimited)</td>
+                    </tr>
+                    <tr>
+                        <td>6H</td>
+                        <td>6 Jam</td>
+                        <td>Rp 3.000 (Unlimited)</td>   <!-- Ganti harga sesuai dengan harga hotspot anda-->
+                    </tr> 
+                    <tr>
+                        <td>1Day</td>
+                        <td>1 Hari</td>   
+                        <td>Rp 5.000 (Unlimited)</td>
+                    </tr>
+                     <tr>
+                        <td>2Day</td>
+                        <td>2 Hari</td>
+                        <td>Rp 8.000 (Unlimited)</td>
+                    </tr>
+                </table>
+                <br />
+                <div>
+                    <h3><bold>"MURAH ITU TIDAK CEPAT... / "CEPAT ITU TIDAK MURAH..."</h3></bold>
+                    <br>
+                    <h3><bold>"UANG YANG ANDA BAYARKAN MERUPAKAN BENTUK IURAN UNTUK BIAYA INTERNET DAN PEMELIHARAAN ALAT-ALAT (MODEM, KABEL, AP, DLL) UNTUK KEBUTUHAN KITA BERSAMA"</bold>
+                    <br/>
+                    <br>
+                    Voucher bisa dibeli di Rumah Robi langsung ke rumah (Belakang Baladesa Karacak) Sms/Whatsapp Di (no whatsapp anda) Login Di Google Crome Ketik "DHCP.NET"
+                    Kumpulkan 10 voucher tiap harganyah mendapatkan 1 voucher gratis..!
+                    Misal: Kumpulkan 10 voucher 5.000 mendapatkan gratis 1 voucher 5.000
+                    <br/>
+                </div>
+                <br/>
+                <br />
+                <div>
+                    Main Wifi Secukupnya Imbangi Dengan Istirahat... Tidur lah Saat Malam!...<br>Masa Berlaku Voucher Wifi Bisa Di liat Di dhcp.net/status.html Di Kolom "Habis Voucher" Misal nov/12/2019 18:01:46 Artinya "Tanggal 12 November 2019 Jam 18:01 Wib"
+                </div>
+                <br/>
+                <br>
+                <div>
+                    <br>Pemberitahuan: Wifi Lancar Jaya...!!<br/>
+                  - Setiap Jam 12 malam Restart Otomatis (Pemeliharaan System)
+                  <br>
+                  - Setiap Hujan Dan Petir Wifi Di Matikan Sementara.
+                  <br>
+                  <br>
+                  Game Online:
+                  <br/>
+                  <br>
+                  -PUBG
+                  -Mobile Legend
+                  -free Fire
+                  -Call Of Duty Mobile
+                  <br/>
+                  <br>
+                <br/>
+            </div>
+        <br />
+        <div class="box" style="color:#000;">
+            <i>Copyright &copy; 2018 Laksamadi</i><br />
+            <i>Powered by <a style="color:#000; text-decoration:underline;" href="https://laksa19.github.io">Mikhmon</a></i>
+            <!-- Tolong jangan dihilangkan bagian ini-->
+        </div>
+        <div class="box" style="color:#000;">
+            <!-- Tolong jangan dihilangkan bagian ini-->
+        </div>
+
+<script type="text/javascript">
+var hostname = window.location.hostname;
+document.getElementById('title').innerHTML = hostname  + " > login";
+
+document.login.username.focus();
+
+var infologin = document.getElementById('infologin');
+infologin.innerHTML = "Masukkan Kode Voucher kemudian klik login.";
+
+// login page 2 mode by Laksamadi Guko
+var username = document.login.username;
+var password = document.login.password;
+
+username.placeholder = "Masukan Code Voucher Anda";
+
+// set password = username
+function setpass() {
+    var user = username.value
+    //user = user.toLowerCase();
+    username.value = user;
+    password.value = user;
+}
+
+username.onkeyup = setpass;
+
+// change to voucher mode
+function voucher() {
+    username.focus();
+    username.onkeyup = setpass;
+    username.placeholder = "Kode Voucher";
+    username.style = "border-radius:3px;"
+    password.type = "hidden";
+    infologin.innerHTML = "Masukkan Kode Voucher kemudian klik login.";
+}
+
+// change to member mode
+function member() {
+    username.focus();
+    username.onkeyup = "";
+    username.placeholder = "Username";
+    username.style = "border-radius:3px 3px 0px 0px;"
+    password.type = "password";
+    infologin.innerHTML = "Masukkan Username dan Password kemudian klik login.";
+}
+</script>
+</body>
+</html>
